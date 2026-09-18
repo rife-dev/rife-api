@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rife-api"
+version = "0.1.0"
+description = "Python client for RIFE-adjacent video enhancement, upscaling and frame-rate normalisation, via a hosted API on Synexa"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "rife-dev"}]
+keywords = ["ai api", "merge-videos", "rife", "rife api", "rife python", "seedvr2-upscale", "synexa"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/rife-dev/rife-api"
+Documentation = "https://rife-dev.github.io/rife-api/"
+"Hosted model" = "https://synexa.ai/explore/bytedance/seedvr2-upscale"
+
+[tool.setuptools.packages.find]
+include = ["rife_api*"]
